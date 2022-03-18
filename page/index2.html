@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Font -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.typekit.net/eoa5atp.css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="icon" href="https://www.novaventa.com.co/o/novaventa-maquinas-theme/images/favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+
+
+<title>Novaventa</title>
+<script src="https://kit.fontawesome.com/8f896800e6.js" crossorigin="anonymous"></script> 
+<script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script> 
+         <script src="js/jquery.fancybox.min.js"></script>
+<script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+</head>
+<body>
+
+<!-- Navegación -->
+
+<div id="navegacion">
+  <div class="container-fluid">
+    <nav class="navbar"> <a class="navbar-brand" href="#"> <img src="img/logo-novaventa.svg" width="180" height="44" class="d-inline-block align-top" alt=""> </a> </nav>
+  </div>
+</div>
+
+<!-- carrusel  -->
+<section id="carrusel">
+  <div class="container-fluid">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+      <!-- Indicators -->
+      <ol style="display: none" class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+        
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active"> <img class=" img-responsive first-slide" src="img/banner-principal.jpg" alt="First slide">
+          <div class="contenido">
+            <div class="carousel-caption">
+              <h1 class="col-xs-12  col-md-8 col-xl-6"> ¡Hola! Seguimos transformando tu negocio desde tu <span class="oficina">Oficina Virtual</span> </h1>
+              <p class="col-xs-12  col-md-8 col-xl-6">Debido a esta actualización tu oficina virtual no estará disponible entre el <span class="fecha"> 21 y el 26 de diciembre.</span></p>
+              <div class="calltoaction col-xs-12  col-md-12 col-xl-12"> <a class="btn btn-lg btn-primary" href="#descubre" data-ancla="uno" role="button">Conoce más </a></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="item">
+          <img class="second-slide" src="img/banner-home.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Slider dos.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div> --> 
+        
+      </div>
+      <a style="display: none" class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left fas fa-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a style="display: none" class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right fas fa-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+  </div>
+</section>
+
+<!-- fin carrusel --> 
+
+<!-- Sección donde se encuentra los links con las anclas a las secciones -->
+
+<section class="sectionanclas">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-sm-4 col-md-4 col-xl-4 fadeIn"> <a style="text-decoration: none;" href="#descubre" data-ancla="uno" role="button">
+        <div class="anclas btn-nav">
+          <div class="anclas-contenedor"> <i class="far fa-thumbs-up"></i>
+            <p>¿Qué puedes hacer durante la actualización?</p>
+          </div>
+          <div> </div>
+        </div>
+        </a> <br>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-sm-4 col-md-4 col-xl-4 fadeIn"> <a style="text-decoration: none;" href="#nopuedeshacer" data-ancla="uno" role="button">
+        <div class="anclas btn-nav">
+          <div class="anclas-contenedor"> <i class="far fa-thumbs-down"></i>
+            <p>¿Qué no puedes hacer durante la actualización?</p>
+          </div>
+          <div> </div>
+        </div>
+        </a> <br>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-sm-4 col-md-4 col-xl-4 fadeIn"> <a style="text-decoration: none;" href="#conocelonuevo" data-ancla="uno" role="button">
+        <div class="anclas btn-nav">
+          <div class="anclas-contenedor"> <i class="fas fa-star"></i>
+            <p>Conoce lo nuevo de tu Oficina Virtual</p>
+          </div>
+          <div> </div>
+        </div>
+        </a> <br>
+      </div>
+    </div>
+  </div>
+  <div id="descubre"></div>
+</section>
+
+<!-- fin sección anclas --> 
+
+<!-- Sección que puedes hacer durante la actualización. -->
+
+<section class="puedes">
+  <div class="container">
+    <h2><span>¿Qué puedes hacer </span>durante esta actualización?</h2>
+    <div class="cont-puedes">
+      <div class="row">
+        <div class="icon col-xs-12 col-sm-12 col-md-2 col-xl-2 wow fadeIn"> <i class="fas fa-user-headset"></i> </div>
+        <div class="texto col-xs-12 col-sm-12 col-md-10 col-xl-10 wow fadeIn">
+          <p> Durante este tiempo puedes realizar consultas generales en las línea de servicio al cliente Novaventa de tu ciudad. También podrás realizar pagos o abonos a tu cuenta en las sucursales y puntos de recaudo físicos. </p>
+          <p></p>
+          <p><a style="color: #1F96AB; text-decoration:underline; " href="#lineas">Ver líneas de servicio al cliente</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="nopuedeshacer"></div>
+</section>
+
+<!--  fin de la Sección que puedes hacer durante la actualización. --> 
+
+<!--  Sección que no puedes hacer durante la actualización. --> 
+
+<!-- ++++++++++++++inicio - Seccion no puedes hacer+++++++++++++++ -->
+
+<section class="nopuedes">
+  <div class="container">
+    <h2><span>¿Qué no puedes hacer </span>durante esta actualización?</h2>
+    <p><strong>Solo desde el 21 al 26 de diciembre</strong> no podrás realizar las actividades que te describamos a continuación porque estamos mejorando tu Oficina Virtual.</p>
+  </div>
+</section>
+<section class="sectionanclas">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-sm-5 col-md-5 col-xl-5 wow fadeIn">
+        <div class="anclas2 iconos2" style="height: 295px">
+          <div style="padding: 30px; text-align: center; margin-top: 20px"> <i class="fas fa-box-open"><span class="line1"></span></i></div>
+          <p style="padding-left: 20px; padding-right: 20px;"><span class="align-middle"><strong>No puedes realizar pedidos</strong> por tu Oficina Virtual ni por WhatsApp.</span></p>
+        </div>
+        <br>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-sm-4 col-md-7 col-xl-7 wow fadeIn">
+        <div class="">
+          <div class="anclas2 iconos">
+            <div id="alinear-texto-vertical" class="anclas-contenedor"> <i class="far fa-window-alt"><span class="line2"></span></i>
+              <p class="alineacion"><span class="align-middle"><strong>No puedes ingresar a tu oficina virtual ni realizar pagos en línea.</strong></span></p>
+            </div>
+            <div> </div>
+          </div>
+        </div>
+        <br>
+        <div class="">
+          <div class="anclas2 iconos">
+            <div id="alinear-texto-vertical" class="anclas-contenedor"> <i class="fas fa-undo-alt"><span class="line2"></span></i>
+              <p class="alineacion"><span class="align-middle"><strong>No puedes realizar</strong> ni gestionar devoluciones de tus productos.</span></p>
+            </div>
+            <div> </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-sm-12 col-md-12 col-xl-12 wow fadeIn">
+        <div class="anclas2 iconos">
+          <div id="alinear-texto-vertical" class="anclas-contenedor"> <i class="fas fa-unlock"><span class="line2"></span></i>
+            <p class="alineacion"><span ><strong>No puedes activar o restablecer</strong> tu contraseña.</span></p>
+          </div>
+          <div> </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-sm-12 col-md-12 col-xl-12 wow fadeIn">
+        <div class="anclas-sinfondo iconos">
+          <div id="alinear-texto-vertical" class="anclas-contenedor"> <i style="color: #595959;" class="far fa-alarm-exclamation"></i>
+            <p style="margin-left: 15px;"><span class="align-middle">Recuerda que tu Oficina Virtual estará disponible de nuevo el <br>
+              <strong style="font-size: 32px;">27 de diciembre</strong> para que disfrutes las nuevas funcionalidades.</span></p>
+          </div>
+          <div> </div>
+        </div>
+      </div>
+    </div>
+    <div class="chev col-xs-12 col-sm-12 col-md-12 col-xl-12 wow fadeIn" > <a style="text-decoration: none;" href="#conocelonuevo" data-ancla="uno" role="button"> <i style="color: #1F96AB;" class="fas fa-chevron-double-down"></i> </a> </div>
+  </div>
+</section>
+
+<!-- ++++++++++++++ Fin - Seccion no puedes hacer ++++++++++++++ -->
+
+<section class="nuevas">
+  <div class="container-fluid">
+    <div class="nuevascabezote"> </div>
+    <div class="contenido-nuevas">
+      <div class="container">
+        <div id="conocelonuevo"></div>
+        <h2 class="col-xs-12 col-sm-12 col-md-6 col-xl-6 wow fadeIn">Nuevas funcionalidades de tu Oficina Virtual</h2>
+        <h3 class="destacado">Disponible a partir del 27 de diciembre.</h3>
+        <p class="destacado">Creamos nuevas funcionalidades en tu Oficina Virtual que te permitirán tener una mejor administración de tu negocio, además de brindarte herramientas que te ayudarán a crecer como Mamá Empresaria y Mamá Líder.</p>
+        
+        <!--  row1 -->
+        
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-xl-6 wow fadeIn">
+            <div class="funcionalidades-titulo"> <i class="fas fa-store"></i>
+              <h2>Navega por la sección <strong>Mi Negocio</strong></h2>
+            </div>
+            <p class="descripcion"> Una vez envíes tu pedido podrás conocer en detalle los puntos ganados, premios redimidos, tu ganancia, los productos despachados y los agotados.</p>
+            <a class="hover01 hover02" data-fancybox href="https://www.youtube.com/watch?v=lvyL9iWluMc&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0"><img style="margin-bottom: 20px;" alt=""  class="img-fluid wow fadeIn " data-wow-duration="2s" src="img/01-video-minegocio.png"> </a>
+          </div>
+          <div class=" wow fadeIn imagen col-xs-12 col-sm-12 col-md-6 col-xl-6" data-wow-duration="3s"> <img alt="" class="img-fluid"  src="img/com-mi-negocio.png"> </div>
+          <div class="chev col-xs-12 col-sm-12 col-md-12 col-xl-12 wow fadeIn" > <a style="text-decoration: none;" href="#consultatupedido" data-ancla="uno" role="button"> <i class="fas fa-chevron-double-down"></i> </a> </div>
+        </div>
+        
+        <!--  row2 -->
+        <div id="consultatupedido"></div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-xl-6 wow fadeIn">
+            <div class="funcionalidades-titulo"> <i class="fas fa-box-open"></i>
+              <h2>Consulta el <strong>detalle de tu pedido</strong></h2>
+            </div>
+            <p class="descripcion"> Una vez envíes tu pedido podrás conocer todo el detalle y saber qué productos recibirás en tu caja. También podrás conocer los puntos que acumularás, premios redimidos, tu ganancia y los productos agotados.</p>
+          </div>
+          <div class=" imagen wow fadeIn col-xs-12 col-sm-12 col-md-6 col-xl-6 wow fadeIn">
+            <a class="hover01 hover02" data-fancybox href="https://www.youtube.com/watch?v=gO0-SAQ57pQ&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0"> <img alt="" class="img-fluid" src="img/02-video-detalle.png"> </a>
+          </div>
+          <div class="chev col-xs-12 col-sm-12 col-md-12 col-xl-12 wow fadeIn" > <a style="text-decoration: none;" href="#seguimientopedido" data-ancla="uno" role="button"> <i class="fas fa-chevron-double-down"></i> </a> </div>
+        </div>
+        
+        <!--  row3 -->
+        <div id="seguimientopedido"></div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12 wow fadeIn">
+            <div class="funcionalidades-titulo"> <i class="fas fa-truck"></i>
+              <h2 class="col-xs-12 col-sm-12 col-md-12 col-xl-6">Seguimiento al <br>
+                <strong>estado de tu pedido </strong></h2>
+            </div>
+            <p class="descripcion"> En la sección de inicio podrás conocer con exactitud el proceso de tu pedido y hacerle seguimiento. 
+              Presta mucha atención a la notificación que aparece debajo de cada una de las etapas previas a la entrega de tu pedido. Allí te informamos la fecha de cada etapa y en qué estado se encuentra. Esto cambiará de acuerdo con el seguimiento de tu pedido. Ejemplos de estados: “Pedido Confirmado”,  “Facturado”, “Rumbo a tu casa”.</p>
+          </div>
+          <div class=" imagen col-xs-12 col-sm-12 col-md-6 col-xl-6 wow fadeIn">
+            <a class="hover01 hover02" data-fancybox href="https://www.youtube.com/watch?v=edyrCnrtGTk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0"> <img style="margin-bottom: 20px;" alt="" class="img-fluid wow fadeIn" src="img/03-video-seguimiento.png"> </a>
+          </div>
+          <div class=" imagen col-xs-12 col-sm-12 col-md-6 col-xl-6 wow fadeIn"> <img alt="" class="img-fluid wow fadeIn" src="img/comp-tracking.png"> </div>
+          <div class="chev col-xs-12 col-sm-12 col-md-12 col-xl-12 wow fadeIn" > <a style="text-decoration: none;" href="#appmamaempresaria" data-ancla="uno" role="button"> <i class="fas fa-chevron-double-down"></i> </a> </div>
+        </div>
+        
+        <!--  row4 -->
+        <div id="appmamaempresaria"></div>
+        <div class="row">
+          <div class="container">
+            <div class="funcionalidades-titulo"> <i> <img alt="" class="img-fluid" src="img/icono-app.png"> </i>
+              <h2 class="col-xs-10 col-sm-10 col-md-10 col-xl-10 wow fadeIn"><strong>Reemplaza tu app móvil </strong>por el acceso directo a tu Oficina Virtual para que disfrutes de sus beneficios.</h2>
+            </div>
+            <p class="descripcion"> Tu app móvil Mamá Empresaria será reemplazada por un acceso directo a la versión móvil de tu Oficina Virtual como te enseñamos en el video a continuación, para que conozcas y experimentes la nueva función de pedido rápido y muchas más. </p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="1000" height="460" src="https://www.youtube.com/embed/mG534sOuCbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="chev col-xs-12 col-sm-12 col-md-12 col-xl-12 wow fadeIn" > <a style="text-decoration: none;" href="#lineas" data-ancla="uno" role="button"> <i class="fas fa-chevron-double-down"></i> </a>
+            <div style="height: 60px"></div>
+          </div>
+        </div>
+      </div>
+      <!--  cierra container --> 
+    </div>
+  </div>
+</section>
+
+<!-- ++++++++++++++inicio - Seccion lineas de atención +++++++++++++++ -->
+<div id="lineas" ></div>
+<section  style="height: 60px"></section>
+<section  class="nopuedes">
+  <div class="wow fadeIn" class="container">
+  <h2><span>¿Necesitas ayuda </span>o tienes preguntas?</h2>
+  <p>Puedes contactarnos por las líneas de servicio al cliente de tu ciudad, la línea gratuita nacional o correo electrónico.</p>
+  </div>
+</section>
+<section class="sectionanclas">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-sm-12 col-md-12 col-xl-12">
+        <div class="contenedor-blanco iconos">
+          <div class="anclas-internas">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+              <p style="margin-top: 30px">Elige tu ciudad</p>
+              <div>
+                <select name="ciudades" id="ciudades" class="form-control">
+                  <option value="1">Bogotá</option>
+                  <option value="2">Medellín</option>
+                  <option value="3">Cali</option>
+                  <option value="4">Barranquilla</option>
+                  <option value="5">Cartagena</option>
+                  <option value="6">Cúcuta</option>
+                  <option value="7"> Ibagué</option>
+                  <option value="8">Bucaramanga</option>
+                  <option value="9">Santa Marta</option>
+                  <option value="10"> Armenia</option>
+                  <option value="11">Manizales</option>
+                </select>
+              </div>
+              <br>
+              <div id="alinear-texto-vertical" style="background-color: #f1f1f1; border-radius: 4px; padding: 8px;"><i style="font-size: 24px;" class="fas fa-phone"></i> <strong style="font-size: 24px; text-decoration: none;"><a style="color: #212121; text-decoration: none;" id="telefono" href=""></a></strong></div>
+            </div>
+            <div class="col-md-4">
+              <p style="margin-top: 30px">Línea gratuita nacional otras ciudades</p>
+              <div id="alinear-texto-vertical" style="background-color: #f1f1f1; border-radius: 4px; padding: 8px;"><i style="font-size: 24px;" class="fas fa-phone"></i> <strong style="font-size: 24px;"><a style="text-decoration: none; color: #1D1D1D" href="tel:018000515101">01 8000 5151 01</a></strong></div>
+              <br>
+              <div id="alinear-texto-vertical" style="padding: 8px;">
+                <spam style="font-size: 12px; text-align: center;">Horario de atención: De lunes a viernes de 7:30 a.m. a 10:00 p.m. y sábados de 8:00 a.m. a 6:00 p.m.</spam>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+          <hr width="80%" align="center">
+          <div id="alinear-texto-vertical" class="anclas-contenedor resp-correo"> <i style="font-size: 36px" class="fas fa-envelope"></i>
+            <p style="margin-left: 15px;"><span class="align-middle"><a class="resp-correo" href="mailto:servicioalcliente@novaventa.com">servicioalcliente@novaventa.com</a></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height="300" src="https://www.youtube.com/embed/lvyL9iWluMc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height="300" src="https://www.youtube.com/embed/gO0-SAQ57pQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height="300" src="https://www.youtube.com/embed/edyrCnrtGTk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ++++++++++++++ Fin - Seccion lineas de atencion ++++++++++++++ -->
+
+<footer class="footer wow fadeIn">
+  <div class="container-fluid" style="background-color: #fff;">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-xl-7 offset-xl-1">
+        <p>Copyright © 2019 Novaventa S.A.S. Todos los derechos reservados.</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-xl-3 ">
+        <div class="logos"> <img class=" img-responsive" src="img/logo-novaventa.svg" width="180" alt="" /> <img class=" img-responsive" src="img/logo-nutresa.svg" width="180" alt="" /> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $('#telefono').html("485 00 22");
+   var telefonos = {
+        1: "485 00 22",
+        2: "283 60 15",
+        3: "380 00 88",
+        4: "319 30 90",
+        5: "642 49 29",
+        6: "589 29 19",
+        7: "279 69 30",
+        8: "691 79 60",
+        9: "439 79 09",
+        10: "731 49 70",
+        11: "893 39 20"
+    }
+    
+    $(document).on('change', '#ciudades', function() {
+        var telefono = telefonos[$(this).val()];
+        if (telefono != 1) {
+            $('#telefono').attr('href','Tel:'+telefono);
+            $('#telefono').html(telefono);
+        } else {
+            $('#telefono').html("485 00 22");
+        }
+    });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="dist/wow.js"></script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeIn';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+</html>
